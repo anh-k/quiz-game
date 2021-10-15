@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+    margin-top: 50px;
+}
+
+body {
+    color: seagreen;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body button {
+    color: white;
+    background-color: seagreen;
+    border: none;
+    padding: 5px;
+}
+
+body button:hover {
+    color: seagreen;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s ease-out;
+}
+
+body input {
+    border: seagreen solid 1px;
+}
+
+#section-one {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+#question {
+    padding: 40px;
+    margin: 20px;
+    border: solid seagreen 1px;
+}
+
+#input-answers {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 20px;
+    border: solid seagreen 1px;
+    gap: 15px;
+}
+
+#number-question {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border: solid seagreen 1px;
+}
+
+#page-two {
+    display: flex;
+    flex-direction: column;
+}
+
+#page-two button {
+    color: black;
+    background-color: white;
+    border: 1px solid seagreen;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#page-two button:hover {
+    color: white;
+    background-color: seagreen;
+    border: 1px solid seagreen;
+    transition: background-color 0.3s, color 0.3s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+

@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Demo</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1 id="title">Quiz Maker</h1>
+        <section class="fade-in" id="section-one">
+            <div id="page-one">
+                <div id="number-question">
+                    <p>Entrez le nombre de questions souhaité</p>
+                    <input type="number" id="input-number" min="1" value="1">
+                    <button id="ok-button">Ok</button>
+                </div>
+                
+                <div class id="question">
+                    <p id="enter-question">Entrez une question</p>
+                    <input type="text" id="input-question">
+                </div>
+                <div id="input-answers">
+                    <p>Entrez la bonne réponse</p>
+                    <input type="text" id="true-answer">
+                    <p>Entrez la mauvaise réponse</p>
+                    <input type="text" id="false-answer">
+                    <button id="add-button">Ajouter</button>
+                    <label id="question-size"></label>
+                </div>
+            </div>
+            <div id="page-two">
+                <label id="question-counter"></label>
+                <h1 id="question-label"></h1>
+                <button id="answerOne"></button>
+                <button id="answerTwo"></button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
